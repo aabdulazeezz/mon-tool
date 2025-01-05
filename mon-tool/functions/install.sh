@@ -10,7 +10,7 @@ echo "Installing..."
 sleep 1
 work_dir=$(dirname $(readlink -f "$0"))
 source ${work_dir}/monitoring.conf
-cat < /tmp/${UNIT_NAME}.service << EOF
+cat > /tmp/${UNIT_NAME}.service << EOF
 
 
 
